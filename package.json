@@ -1,0 +1,44 @@
+{
+    "name": "gstreamer-compose",
+    "version": "0.1.0",
+    "main": "main.js",
+    "description": "Simple electron.atom.io app and express webservices to compose video streams and files together to watch or record.",
+    "repository" : "https://github.com/kazaak/gstreamer-compose.git",
+    "author" : "Matt LeMay",
+    "dependencies": {
+        "@angular/common":  "2.0.0-rc.3",
+        "@angular/compiler":  "2.0.0-rc.3",
+        "@angular/core":  "2.0.0-rc.3",
+        "@angular/forms": "0.1.1",
+        "@angular/http":  "2.0.0-rc.3",
+        "@angular/platform-browser":  "2.0.0-rc.3",
+        "@angular/platform-browser-dynamic":  "2.0.0-rc.3",
+        "@angular/router":  "3.0.0-alpha.8",
+        "@angular/router-deprecated":  "2.0.0-rc.2",
+        "@angular/upgrade":  "2.0.0-rc.3",
+        "systemjs": "0.19.27",
+        "core-js": "^2.4.0",
+        "reflect-metadata": "^0.1.3",
+        "rxjs": "5.0.0-beta.6",
+        "zone.js": "^0.6.12",
+        "angular2-in-memory-web-api": "0.0.12",
+        "bootstrap": "^3.3.6",
+        "ag-grid": "^4.2.x",
+        "ag-grid-ng2": "^4.2.x"
+    },
+    "devDependencies": {
+        "gulp-typescript": "^2.13.6",
+        "concurrently": "^2.0.0",
+        "lite-server": "^2.2.0",
+        "typescript": "^1.8.10",
+        "typings":"^1.0.4"
+    },
+    "scripts": {
+        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "lite": "lite-server",
+        "postinstall": "typings install",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "typings": "typings"
+    }
+}
